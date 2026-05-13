@@ -14,8 +14,11 @@ def main():
         length = int(input("Enter the desired password length (at least 8 characters): "))
         password = generate_password(length)
         print(f"Generated Password: {password}")
+
+        input("\nPress Enter to exit...")
     except ValueError as e:
         print(e)
+        input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
     main()
